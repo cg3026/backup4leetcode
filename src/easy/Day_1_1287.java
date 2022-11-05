@@ -7,16 +7,16 @@ import java.util.Map;
 //给你一个非递减的 有序 整数数组，已知这个数组中恰好有一个整数，它的出现次数超过数组元素总数的 25%。
 //请你找到并返回这个整数
 
-public class Day_one_1287 {
+public class Day_1_1287 {
 
     public static int findSpecialInteger_2A(int[] arr){
         int[] count = new int[arr[arr.length - 1] + 1];
         int num = 0;
         int len = arr.length;
-        for(int i = 0; i<len; i++){
-            count[arr[i]]++;
-            if (count[arr[i]] > ((float)arr.length/(float)4)){
-                num = arr[i];
+        for (int j : arr) {
+            count[j]++;
+            if (count[j] > ((float) arr.length / (float) 4)) {
+                num = j;
                 break;
             }
         }
@@ -81,12 +81,10 @@ public class Day_one_1287 {
         int number = 0;
         for (int i=0; i<len; i+=span){
             int left = 0;
-            int mid_right = i;
             int right = arr.length - 1;
-            int mid_left = i;
             int mid = arr[i];
-            right = right(arr, mid_left, right, mid);
-            left = left(arr, left, mid_right, mid);
+            right = right(arr, i, right, mid);
+            left = left(arr, left, i, mid);
             if (right - left + 1 >arr.length/4){
                 number = arr[i];
                 break;

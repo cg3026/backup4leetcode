@@ -1,6 +1,6 @@
 package easy;
 
-public class Day_two_1662 {
+public class Day_2_1662 {
 
     public boolean arrayStringsAreEqual_slow(String[] word1, String[] word2) {
         StringBuilder wd = new StringBuilder();
@@ -26,7 +26,7 @@ public class Day_two_1662 {
     }
 
     public static void main(String[] args) {
-        Day_two_1662 dt1662 = new Day_two_1662();
+        Day_2_1662 dt1662 = new Day_2_1662();
         String[] word1 = {"ab", "c"};
         String[] word2 = {"a", "bc"};
         System.out.println(dt1662.arrayStringsAreEqual_fast(word1, word2));

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class Day_two_LCP07 {
+public class Day_2_LCP07 {
 
     int ways, n, k;
     List<List<Integer>> edges;
@@ -84,7 +84,7 @@ public class Day_two_LCP07 {
     }
     public static void main(String[] args) {
         int n = 5;
-        Day_two_LCP07 dt7 = new Day_two_LCP07();
+        Day_2_LCP07 dt7 = new Day_2_LCP07();
         int[][] relation = new int[][]{{0,2},{2,1},{3,4},{2,3},{1,4},{2,0},{0,4}};
         int[][] relation_0 = new int[][]{{0,2},{2,1}};
         int[][] relation_1 = new int[][]{{0,1},{0,2},{2,1},{1,2},{1,0},{2,0}};

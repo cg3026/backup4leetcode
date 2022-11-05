@@ -1,7 +1,7 @@
 package medium;
 
 
-public class Day_three_1620 {
+public class Day_3_1620 {
 
     public double o_distance(int[] coordinate_0, int[] coordinate_1){
         return Math.sqrt(Math.pow((coordinate_0[0]-coordinate_1[0]), 2) + Math.pow((coordinate_0[1]-coordinate_1[1]), 2));
@@ -43,7 +43,7 @@ public class Day_three_1620 {
     public static void main(String[] args) {
         int[] co_1 = new int[]{0,0,0};
         int[] co_2 = new int[]{1,1,1};
-        Day_three_1620 dt = new Day_three_1620();
+        Day_3_1620 dt = new Day_3_1620();
         int [][] towers = new int[][]{{1,2,5},{2,1,7},{3,1,9}};
         int radius = 2;
         int[] pp = dt.bestCoordinate(towers, radius);

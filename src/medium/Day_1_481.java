@@ -6,7 +6,7 @@ package medium;
 //  给你一个整数 n ，返回在神奇字符串 s 的前 n 个数字中 1 的数目。
 //
 
-public class Day_one_481 {
+public class Day_1_481 {
 
     public static int magicalString_my(int n){
         int i = 2;

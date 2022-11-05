@@ -1,6 +1,6 @@
 package easy;
 
-public class Day_three_1832 {
+public class Day_3_1832 {
 
     // 大内存占用
     public boolean checkIfPangram_bm(String sentence){
@@ -36,7 +36,7 @@ public class Day_three_1832 {
     }
     public static void main(String[] args) {
         String str = "thequickbrownfoxjumpsoverthelazydog";
-        Day_three_1832 dt = new Day_three_1832();
+        Day_3_1832 dt = new Day_3_1832();
         boolean flagg = dt.checkIfPangram_fast(str);
         System.out.println(flagg);
     }
