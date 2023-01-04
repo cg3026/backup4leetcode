@@ -1,14 +1,7 @@
 package medium;
 
 import java.util.List;
-
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
+import easy.ListNode;
 
 public class Day_5_2 {
 
@@ -59,7 +52,7 @@ public class Day_5_2 {
     }
     public ListNode gen_list(int[] num){
         ListNode head = null;
-        ListNode last = null;;
+        ListNode last = null;
         for (int nums:num){
             ListNode node = new ListNode(nums);
             if (head == null){
